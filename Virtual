@@ -1,0 +1,1812 @@
+import time
+import random
+import datetime
+
+
+
+
+
+
+
+print("Привет! Я виртуальный помощник VirtuAl!")
+print(' ')
+time.sleep(1)
+
+username = input('Введите ваше имя: ')
+print('Привет,', username + '!')
+print()
+
+print('Вот список команд:')
+print("1. Игра")
+print("2. Квиз")
+print('3. Рандомайзер')
+print('4. Советчик')
+print('5. Предсказание на день')
+print('6. Калькулятор')
+print('7. Тех. Поддержка')
+
+print(' ')
+print('Чтобы увидеть список команд, напишите - commands.')
+print('Чтобы выбрать, напишите номер команды.')
+
+
+
+while True:
+    
+
+    time.sleep(1.5)
+    print()
+    print()
+    command = input('Введите номер команды: ')
+    print()
+
+    if command.lower() == 'привет' or command.lower() == 'привет!' or command.lower() == 'hi':
+        print('')
+        print('Привет, чем я могу тебе помочь сегодня?')
+        print('')
+
+        
+
+    elif command.lower() == 'как дела?' or command.lower() == 'как дела' or command.lower() == 'как у тебя дела?' or command.lower() == 'как у тебя дела':
+        print('У меня все отлично! А как у вас?')
+        kakdela = input()
+
+        if kakdela.lower() == 'у меня тоже' or kakdela.lower() == 'тоже' or kakdela.lower() == 'у меня тоже!':
+            print('Я рад, что у вас тоже все хорошо!')
+        else:
+            print('')
+
+        
+
+    elif command.lower() == 'спасибо':
+        print('Всегда пожалуйста! Если вам понадобится что-то еще, обращайтесь!')
+
+        
+
+    elif command.lower() == 'broke' or command.lower() == 'error':
+        for olololo in range(10000):
+            print('error 404')
+
+        
+
+            
+    elif command.lower() == 'донат' or command.lower() == 'donat' or command.lower() == 'money':
+        print()
+        print('Если хотите поддержать меня в разработке проектов🔽')
+        print()
+        print('Ссылка на донат -  https://www.donationalerts.com/r/wdyh_me')
+        
+        
+        
+        
+ 
+    elif command.lower() == 'команды' or command.lower() == 'commands':
+        print(' ')
+        print('Вот список команд, которые вы можете использовать:')
+        print("1. Игра")
+        print("2. Квиз")
+        print('3. Рандомайзер')
+        print('4. Советчик')
+        print('5. Предсказание на день')
+        print('6. Калькулятор')
+        print('7. Тех. Поддержка')
+        
+        print(' ')
+    
+    
+    elif command.lower() == 'игра' or command == '1':
+        print("Выберите тип игр, в которые хотите поиграть:")
+        print("1. Текстовые игры")
+        print('2. Игры с рандомом')
+        print('3. Игры с датами')
+        print('')
+        
+        command_tip_igri = input('Введите номер нужного типа: ')
+        
+        if command_tip_igri.lower() == 'текстовые игры' or command_tip_igri == '1':
+            print()
+            print("Вот список Текстовых игр:")
+            print("1. Три Двери")
+            print('')
+                
+    
+        
+            command_textgame = input("Введите номер игры: ")
+            print('')
+        
+            if command_textgame.lower() == "три двери"  or command_textgame == '1':
+           
+              print("ИГРА - 3 ДВЕРИ")
+            
+             
+              print('Добро пожаловать,', username,'!')
+              print()
+              print('Чтобы продолжить напиши - Start')
+              
+              enter = input()  
+              if enter.lower() == "start":
+                    print('')
+                    print('')
+                    print('Предисловие:')
+                    print('Вы идёте устраиваться на работу в компанию Kodland. Но перед самым входом в офис, вас похищает Zloddy и увозит в подвал' )
+                    print('расположенный под офисом Kodland. Вы можете сбежать из этого подвала, но для этого вам предстоит выбрать правильную дверь.')
+                    print('Ведь далеко не каждая дверь приведет вас в офис Kodland...')
+                    
+                    while True:
+                        print('')
+                        print('Напишите номер двери (1-3), в которую хотите войти')
+                        
+                        door = input()
+                        if door == "1":
+                            
+                            print('')
+                            print('Вы открыли первую дверь.')
+                            print('Вы только подумали что вам повезло, как вдруг, будто из неоткуда, выскочил вампир и заговорил:')
+                            
+                            print()
+                            print('- Здравствуй, человек. Чтобы выбраться из подвала тебе предстоит выйграть меня в Камень, Ножницы, Бумага!')
+                            print('Если выйграешь меня, я так уж и быть выведу тебя на свободу, а если выйграю я, отправишься на корм акулам!')
+                            
+                            print()
+                            print('Ну что ж, видимо нам придется сыграть с вампиром')
+                            print()
+                            
+                            print('Если вы не помните правила этой игры, напишите - Rules, если помните, напишите - Yes')
+                            otvet = input()
+                            if otvet.lower() == 'правила' or otvet.lower() == 'rules':
+                                print('')
+                                print('В игре Камень - Ножницы - Бумага, двоим игрокам предстоит одновременно выбрать и написать один предмет из трёх - Камень, Ножницы или Бумагу, чей предмет окажется сильнее, тот и победил!')
+                                print(' ')
+                                print('СИЛА ПРЕДМЕТОВ')
+                                print('Камень побеждает Ножницы.')
+                                print('Ножницы побеждают Бумагу.')
+                                print('Бумага побеждает Камень.')
+                                
+                            else:
+                                print('')
+                             
+                            time.sleep(1)
+                            print('Чтобы выбрать: Камень, напишите - 1, Ножницы, напишите - 2, Бумагу, напишите - 3')    
+                            time.sleep(2)
+                            
+                            
+                             
+                
+                            
+                            print('')
+                            print('Камень, Ножницы, Бумага')
+                            time.sleep(1)
+                            print(3)
+                            time.sleep(0.5)
+                            print(2)
+                            time.sleep(0.5)
+                            print(1)
+                            time.sleep(0.5)
+                            
+                            kmn = input('Ваш выбор (1/2/3): ')
+    
+                            if kmn == '1':
+                                kamenibumaga = 'Камень'
+                                
+                            if kmn == '2':
+                                kamenibumaga = 'Ножницы'
+                                
+                            if kmn == '3':
+                                kamenibumaga = 'Бумага'
+                            time.sleep(0.5)    
+                                    
+                                
+                                
+                            print(username + ': Я выбираю - ',kamenibumaga)
+                                
+                            kmnotvet = random.choice(['Ножницы','Бумага','Камень'])
+                                
+                            print('VirtuAl: Я выбираю - ',kmnotvet)
+                            
+                            print()    
+                            
+                            if kmn == '1' and kmnotvet == 'Ножницы':
+                                print('Поздравляю, вы победили!')
+                                print('')
+                                print('Вампир, как и обещал, вывел вас на свободу и вы успешно устроились на работу в офис Kodland!')
+                                print('') 
+                                print('YOU WIN!!!')
+                                
+                                
+                                        
+                                break    
+                                    
+                                
+                            elif kmn == '2' and kmnotvet == 'Бумага':
+                                print('Поздравляю, вы победили!')
+                                print('')
+                                print('Вампир, как и обещал, вывел вас на свободу и вы успешно устроились на работу в офис Kodland!')
+                                print('') 
+                                print('YOU WIN!!!')
+    
+                                
+                            elif kmn == '3' and kmnotvet == 'Камень':
+                                print('Поздравляю, вы победили!')
+                                print('')
+                                print('Вампир, как и обещал, вывел вас на свободу и вы успешно устроились на работу в офис Kodland!')
+                                print('') 
+                                print('YOU WIN!!!')
+                                
+                                
+                                            
+                            elif kmn == '1' and kmnotvet == 'Бумага':
+                                print('Победил вампир...')
+                                print('')
+                                print('Вампир не стал медлить с выполнением своего обещания... Он грубо схватил вас и бросил в бассейн с акулами. От вас остался лишь клочок одежды...')
+                                print('')
+                                time.sleep(2)
+                                print('Вы погибли.')
+                                time.sleep(2)
+                                print('')
+                                print('Чтобы начать сначала, напишите - again')
+                                again = input()
+                                if again.lower() == 'again':
+                                    print()
+                                    
+                                else:
+                                    break
+                                
+                                    
+                            elif kmn == '2' and kmnotvet == 'Камень':
+                                print('Победил вампир...')
+                                print('')
+                                print('Вампир не стал медлить с выполнением своего обещания... Он грубо схватил вас и бросил в бассейн с акулами. От вас остался лишь клочок одежды...')
+                                print('')
+                                time.sleep(2)
+                                print('Вы погибли.')
+                                time.sleep(2)
+                                print('')
+                                print('Чтобы начать сначала, напишите - again')
+                                again = input()
+                                if again.lower() == 'again':
+                                    print()
+                                    
+                                else:
+                                    break
+                                    
+                            elif kmn == '3' and kmnotvet == 'Ножницы':
+                                print('Победил вампир...')    
+                                print('')
+                                print('Вампир не стал медлить с выполнением своего обещания... Он грубо схватил вас и бросил в бассейн с акулами. От вас остался лишь клочок одежды...')
+                                print('')
+                                time.sleep(2)
+                                print('Вы погибли.')
+                                time.sleep(2)
+                                print('')
+                                print('Чтобы начать сначала, напишите - again')
+                                again = input()
+                                if again.lower() == 'again':
+                                    print()
+                                    
+                                else:
+                                    break
+                                
+                            elif kmn == '1' and kmnotvet == 'Камень':
+                                print('У вас ничья!')
+                                print()
+                                print('Вампиру не понравилось то, что у вас ничья, и он отправил вас на старт.')
+                                print()
+                                time.sleep(2)
+                                
+                            elif kmn == '2' and kmnotvet == 'Ножницы':
+                                print('У вас ничья!')
+                                print()
+                                print('Вампиру не понравилось то, что у вас ничья, и он отправил вас на старт.')
+                                print()
+                                time.sleep(2)
+                                
+                                
+                            elif kmn == '3' and kmnotvet == 'Бумага':
+                                print('У вас ничья!')
+                                print()
+                                print('Вампиру не понравилось то, что у вас ничья, и он отправил вас на старт.')
+                                print()
+                                time.sleep(2)
+                                
+                                
+                                
+                                
+                            
+                                
+                                    
+                            
+                             
+                                
+                            
+                            
+                           
+                            
+                            
+                        elif door == '2':
+                            
+                            print('')
+                            print('Вы открыли вторую дверь.')
+                            print('Вы идете по темному коридору, опасности нет.')
+                            print('Вдруг дорога раздваивается.')
+                            print('Вы можете пойти либо направо, либо налево.')
+                            print('')
+                            
+                            
+    
+                            print('Чтобы идти направо, напишите - Right')
+                            print('Чтобы идти налево, напишите - Left')
+                            rightorleft = input()
+                            
+                            if rightorleft.lower() == 'right':
+                                print('')
+                                print('Вы повернули направо.')
+                                print('Сразу за поворотом оказался обрыв.')
+                                print('Вы упали и разбились.')
+                                print('')
+                                print('Вы проиграли.')
+                                time.sleep(1)
+                                print()
+                                print("Чтобы начать сначала, напишите - Again")
+                                print('Чтобы закончить напишите - Stop')
+                                atamobriv = input()
+                                print()
+                            
+                                if atamobriv.lower() == 'again':
+                                    print()
+                            
+                                else:
+                                    break
+                                                                                    
+                            elif rightorleft.lower() == 'left': 
+                                print('')
+                                print('Вы повернули налево.')
+                                print('За поворотом оказался длинный коридор.')
+                                print('')
+                                
+                                print('Чтобы идти дальше, напишите - Go')
+                                print('Чтобы остановиться, напишите - Stop')
+                                
+                                goorstop = input()
+                                if goorstop.lower() == 'go':
+                                    print('')
+                                    print('Вы пошли дальше.')
+                                    print('Вы дошли до двери.')
+                                    print('')
+                                
+                                    print('Чтобы зайти, напишите - Room')
+                                    print('Чтобы не заходить, напишите - Hall')
+                                
+                                    roomorhall = input()
+                                    if roomorhall.lower() == 'room':
+                                        print('')
+                                        print('Вы зашли в комнату.')
+                                        print('Вдруг вы услышали, как дверь за вами захлопнулась.')
+                                        print('В комнате выключился свет.')
+                                        print('Вдруг комната начала наполняться ядовитым газом.')
+                                        print('')
+                                        print('Вы проиграли.')
+                                        time.sleep(1)
+                                        print()
+                                
+                                        print("Чтобы начать сначала, напишите - Again")
+                                        print('Чтобы закончить напишите - Stop')
+                                        roomihall = input()
+                                        print()
+                                
+                                        if roomihall.lower() == 'again':
+                                            print()
+                                
+                                        else:
+                                            break
+    
+    
+    
+                                                    
+                                                
+                                    elif roomorhall.lower() == 'hall':
+                                        print('')
+                                        print('Вы не стали заходить в комнату. ')
+                                        print('Вдруг вы услышали шаги позади вас.')
+                                        print('Но обернутся вы так и не успели.')
+                                        print('Вам в спину воткнули нож.')
+                                        print('')
+                                        print('Вы проиграли.')
+                                                        
+                                        time.sleep(1)
+                                        print()
+                                        print("Чтобы начать сначала напишите - Again")
+                                        print('Чтобы закончить напишите - Stop')
+                                                    
+                                        hallllll = input()
+                                        print()
+                                                    
+                                        if hallllll.lower() == 'again':
+                                            print()
+                                                            
+                                        else:
+                                            print()
+                                            break
+                                                        
+                                                        
+                                            
+                                                        
+                                    else:
+                                        print('Такого варианта ответа нет.')
+                                        print()
+                                        time.sleep(1)    
+                                                    
+                                                    
+                                                    
+                                elif goorstop.lower() == 'stop': 
+                                    print('')
+                                    print('Вы не стали идти дальше по коридру.')
+                                    print('Пока вы стояли и думали, что делать дальше, весь пол вокруг вас заполнился ядовитыми пауками.')
+                                    print('Вы пытались от них убежать.')
+                                    print('Но один из них все равно вас укусил.')
+                                    print('Вы потеряли сознание...')
+                                    print('')
+                                    print('Вы проиграли.')
+                                    time.sleep(1)
+                                    print()
+                                    print("Чтобы начать сначала, напишите - Again")
+                                    print('Чтобы закончить напишите - Stop')
+                                    goilistop = input()
+                                    print()
+                                                
+                                    if goilistop.lower() == 'again':
+                                            print()
+                                                
+                                    else:
+                                        break
+                                                
+                                
+                                
+                                        
+                                
+                        
+                                
+                                
+                        elif door == "3":  
+                            print('')
+                            print('Вы открыли третью дверь.')
+                            print('Сразу за дверью оказался лифт.')
+                            print('Вы зашли в него.')
+                            print('Выберите этаж на который хотите подняться (1-3).')
+                                
+                            print('Чтобы выбрать, напишите номер этажа:') 
+                            
+                            viberietazhplz = input()
+                            if viberietazhplz == '1':
+                                print('')
+                                print('Пока вы поднимались, трос лифта оборвался и лифт упал в шахту.')
+                                print('Вы не пережили падения и разбились.')
+                                print('')
+                                print('Вы проиграли.')
+                                time.sleep(1)
+                                print()
+                                print("Чтобы начать сначала, напишите - Again")
+                                print('Чтобы закончить напишите - Stop')
+                                liftupal = input()
+                                print()
+                            
+                                if liftupal.lower() == 'again':
+                                    print()
+                            
+                                else:
+                                    break
+                                                   
+                                
+                            elif viberietazhplz == '2': 
+                                print('')
+                                print('Вы поднялись на второй этаж.')
+                                print('Перед вами большая, абсолютно белая комната')
+                                print('В другом конце комнаты вы замечаете 2 лестницы')
+                                print('Вы можете спустится на первый этаж, либо поднятся на 3 этаж.')
+                                print('')
+                                print('Чтобы спустится, напишите - Down')
+                                print('Чтобы поднятся, напишите - Up')
+                                
+                                downorup = input()
+                                if downorup.lower() == 'down':
+                                    print('')
+                                    print('Вы спустились на 1 этаж.')
+                                    print('В комнате выключен свет, и вам абсолютно ничего не видно, кроме последней ступеньки.')
+                                    print('Вы решаете испытать судьбу и пойти дальше.')
+                                    print('Пола внизу не оказывается')
+                                    print('Вы падаете вниз, в бассейн с крокодилами')
+                                    print('Они вас съели...')
+                                    print('')
+                                    print('Вы проиграли.')
+                                    
+                                    time.sleep(1)
+                                    print()
+                                    print("Чтобы начать сначала, напишите - Again")
+                                    print('Чтобы закончить напишите - Stop')
+                                    usholdown = input()
+                                    print()
+                                
+                                    if usholdown.lower() == 'again':
+                                        print()
+                                
+                                    else:
+                                        break
+                                
+                                elif downorup.lower() == 'up':  
+                                    print('')
+                                    print('Вы поднялись на третий этаж.')
+                                    print('На третьем этаже вы увидели испуганного мужчину.')
+                                    print('Вы подошли к нему, и как только он увидел вас, на его лице проступило облегчение.')
+                                    print('Оказалось, что это работник компании Kodland, который обыскался вас.')
+                                    print('Мужчина провел вас в офис компании и вы успешно устроились на работу!')
+                                    print('')
+                                    print('YOU WIN!!!')
+                                    
+                                    break
+                                
+                                else:
+                                    print('Такого варианта нет.')
+                            
+                            elif viberietazhplz == '3':
+                                print('')
+                                print('Вы поднялись на третий этаж')
+                                print('На третьем этаже вы увидели испуганного мужчину.')
+                                print('Вы подошли к нему, и как только он увидел вас, на его лице проступило облегчение.')
+                                print('Оказалось, что это работник компании Kodland, который обыскался вас.')
+                                print('Мужчина провел вас в офис компании и вы успешно устроились на работу!.')
+                                print('')
+                                print('YOU WIN!!!')
+                                
+                                break
+                                
+                            else:
+                                print()
+                                print('Такого этажа нет.')
+                                
+                                
+                        else:
+                            print('Такой двери нет.')
+                            
+              else:
+                  print('Такой команды не')
+          
+            else:
+                print('Других текстовых игр пока что нет(')
+        
+        
+        
+        
+        
+        elif command_tip_igri.lower() == 'игры с рандомом' or command_tip_igri == '2':
+            print()
+            print("Вот список Игр c рандомом:")
+            print("1. Камень. Ножницы. Бумага")
+            print('2. Крестики-Нолики')
+            print('')
+                
+    
+        
+            command_randomgame = input("Введите номер игры: ")
+            print('')
+        
+            
+                        
+        
+        
+        
+        
+            if command_randomgame.lower() == 'камень ножницы бумага' or command_randomgame.lower() == 'кнб' or command_randomgame.lower() == 'камень, ножницы, бумага' or command_randomgame == '1':
+                print('')
+                
+                print('Приветствую,' ,username, '!')
+                
+                playerkmn_score = 0 
+                compkmn_score = 0
+                
+                print('')
+                print('Думаю, вы знаете игру Камень-Ножницы-Бумага. Давайте в нее сыграем!')
+                time.sleep(0.5)
+                print('')
+                time.sleep(1)
+                print('По моей команде, вам надо будет выбрать - Камень, Ножницы или Бумагу')
+                print('Чтобы выбрать: Камень, напишите - 1, Ножницы, напишите - 2, Бумагу, напишите - 3')
+                print('')
+                time.sleep(1)
+                print('Если вы не помните правила этой игры, напишите - Rules, если помните, напишите Go:')
+                kamennajabumaga = input()
+                if kamennajabumaga.lower() == 'правила' or kamennajabumaga.lower() == 'rules':
+                    print('')
+                    print('В игре Камень - Ножницы - Бумага, двоим игрокам предстоит одновременно выбрать и написать один предмет из трёх -')
+                    print('Камень, Ножницы или Бумагу, чей предмет окажется сильнее, тот и победил!')
+                    print(' ')
+                    print('СИЛА ПРЕДМЕТОВ')
+                    print('Камень побеждает Ножницы.')
+                    print('Ножницы побеждают Бумагу.')
+                    print('Бумага побеждает Камень.')
+                    
+                else:
+                    print('')
+                
+    
+                
+                time.sleep(2)
+                
+                while True:    
+                    print('')
+                    print('Камень, Ножницы, Бумага')
+                    time.sleep(1)
+                    print(3)
+                    time.sleep(0.5)
+                    print(2)
+                    time.sleep(0.5)
+                    print(1)
+                    time.sleep(0.3)
+                    print()
+                    
+                    hodigrokakmn = input('Ваш выбор (1/2/3): - ')
+                    print()
+                    if hodigrokakmn == '1':
+                        print(username,': Я выбираю - Камень')
+                        
+                    elif hodigrokakmn == '2':
+                        print(username,': Я выбираю - Ножницы')
+                        
+                    elif hodigrokakmn == '3':
+                        print(username,': Я выбираю - Бумага')
+                        
+                    elif hodigrokakmn.lower() ==  'stop':
+                        print('Ну стоп, так стоп...(')
+                        print()
+                        break
+                    
+                    else:
+                        print('Такой команды нет.')
+                        
+                         
+                    
+                    
+                    hodbotakmn = random.choice(['Ножницы','Бумага','Камень'])
+                    
+                    print('VirtuAl: Я выбираю - ',hodbotakmn,)
+                    print()
+                    
+                    if (hodigrokakmn == '2') and (hodbotakmn == 'Бумага' or hodbotakmn == 'бумага'):
+                        print('Поздравляю, вы победили!')
+                        playerkmn_score += 1
+                        
+                        print()
+                        print('У вас',playerkmn_score,'очков')
+                        print('У VirtuAl',compkmn_score,'очков')
+                        print()
+                        
+                        print("Чтобы продолжить играть, напишите - F")
+                        print('Чтобы закончить напишите - Stop')
+                        voprosleavekmn = input()
+                        print()
+                                
+                        if voprosleavekmn.lower() == 'f':
+                            print()
+                                
+                        else:
+                            print('Игра окончена.')
+                            break
+                        
+                    
+                    elif (hodigrokakmn == '3') and (hodbotakmn == 'Камень' or hodbotakmn == 'камень'):
+                        print('Поздравляю, вы победили!')
+                        playerkmn_score += 1
+                        
+                        
+                        print()
+                        print('У вас',playerkmn_score,'очков')
+                        print('У VirtuAl',compkmn_score,'очков')
+                        print()
+                        
+                        print("Чтобы продолжить играть, напишите - F")
+                        print('Чтобы закончить напишите - Stop')
+                        voprosleavekmn = input()
+                        print()
+                                
+                        if voprosleavekmn.lower() == 'f':
+                            print()
+                                
+                        else:
+                            print('Игра окончена.')
+                            break
+                    
+                    elif (hodigrokakmn == '1') and (hodbotakmn == 'Ножницы'  or hodbotakmn == 'ножницы'):
+                        print('Поздравляю, вы победили!')
+                        playerkmn_score += 1
+                        
+                        print()
+                        print('У вас',playerkmn_score,'очков')
+                        print('У VirtuAl',compkmn_score,'очков')
+                        print()
+                        
+                        print("Чтобы продолжить играть, напишите - F")
+                        print('Чтобы закончить напишите - Stop')
+                        voprosleavekmn = input()
+                        print()
+                                
+                        if voprosleavekmn.lower() == 'f':
+                            print()
+                                
+                        else:
+                            print('Игра окончена.')
+                            break
+                                
+                    elif (hodbotakmn == 'Ножницы' or hodbotakmn == 'ножницы') and (hodigrokakmn == '3'):
+                        print('Победил VirtuAl.')
+                        compkmn_score += 1
+                        
+                        print()
+                        print('У вас',playerkmn_score,'очков')
+                        print('У VirtuAl',compkmn_score,'очков')
+                        print()
+                        
+                        print("Чтобы продолжить играть, напишите - F")
+                        print('Чтобы закончить напишите - Stop')
+                        voprosleavekmn = input()
+                        print()
+                                
+                        if voprosleavekmn.lower() == 'f':
+                            print()
+                                
+                        else:
+                            print('Игра окончена.')
+                            break
+                        
+                    elif (hodbotakmn == 'Бумага' or hodbotakmn == 'бумага') and (hodigrokakmn == '1'):
+                        print('Победил VirtuAl.')
+                        compkmn_score += 1
+                        
+                        print()
+                        print('У вас',playerkmn_score,'очков')
+                        print('У VirtuAl',compkmn_score,'очков')
+                        print()
+                        
+                        print("Чтобы продолжить играть, напишите - F")
+                        print('Чтобы закончить напишите - Stop')
+                        voprosleavekmn = input()
+                        print()
+                                
+                        if voprosleavekmn.lower() == 'f':
+                            print()
+                                
+                        else:
+                            print('Игра окончена.')
+                            break
+                        
+                        
+                    elif (hodbotakmn == 'Камень' or hodbotakmn == 'камень') and (hodigrokakmn == '2'):
+                        print('Победил VirtuAl.')    
+                        compkmn_score += 1
+                        
+                        print()
+                        print('У вас',playerkmn_score,'очков')
+                        print('У VirtuAl',compkmn_score,'очков')
+                        print()
+                        
+                        
+                        print("Чтобы продолжить играть, напишите - F")
+                        print('Чтобы закончить напишите - Stop')
+                        voprosleavekmn = input()
+                        print()
+                                
+                        if voprosleavekmn.lower() == 'f':
+                            print()
+                                
+                        else:
+                            print('Игра окончена.')
+                            break
+                        
+                    elif hodigrokakmn == '1' and hodbotakmn == 'Камень':
+                        print('У вас ничья!')
+                        
+                        print()
+                        print('У вас',playerkmn_score,'очков')
+                        print('У VirtuAl',compkmn_score,'очков')
+                        print()
+                        
+                        print("Чтобы продолжить играть, напишите - F")
+                        print('Чтобы закончить напишите - Stop')
+                        voprosleavekmn = input()
+                        print()
+                                
+                        if voprosleavekmn.lower() == 'f':
+                            print()
+                                
+                        else:
+                            print('Игра окончена.')
+                            break
+                        
+                    elif hodigrokakmn == '2' and hodbotakmn == 'Ножницы':
+                        print('У вас ничья!')   
+                        
+                        print()
+                        print('У вас',playerkmn_score,'очков')
+                        print('У VirtuAl',compkmn_score,'очков')
+                        print()
+                        
+                        
+                        print("Чтобы продолжить играть, напишите - F")
+                        print('Чтобы закончить напишите - Stop')
+                        voprosleavekmn = input()
+                        print()
+                                
+                        if voprosleavekmn.lower() == 'f':
+                            print()
+                                
+                        else:
+                            print('Игра окончена.')
+                            break
+                        
+                    elif hodigrokakmn == '3' and hodbotakmn == 'Бумага':
+                        print('У вас ничья!')    
+                        
+                        print()
+                        print('У вас',playerkmn_score,'очков')
+                        print('У VirtuAl',compkmn_score,'очков')
+                        print()
+                        
+                        print("Чтобы продолжить играть, напишите - F")
+                        print('Чтобы закончить напишите - Stop')
+                        voprosleavekmn = input()
+                        print()
+                                
+                        if voprosleavekmn.lower() == 'f':
+                            print()
+                                
+                        else:
+                            print('Игра окончена.')
+                            time.sleep(1)
+                            break
+                    
+            
+            elif command_randomgame.lower() == 'крестики нолики' or command_randomgame.lower() == 'крестики-нолики' or command_randomgame == '2':
+                print()
+                print('КРЕСТИКИ-НОЛИКИ')
+                print()
+                print()
+                board = list(range(1, 10))
+                
+                for i in range(3):
+                    print("|", board[0 + i * 3], "|", board[1 + i * 3], "|", board[2 + i * 3], "|")
+                
+                while True:
+                    
+                    print()
+                    hod_usera = input('Введите, на какую клетку вы хотите поставить X: ')
+                    print()
+                
+                   
+                    if hod_usera.isdigit():
+                        hod_usera = int(hod_usera)
+                        if 1 <= hod_usera <= 9 and board[hod_usera - 1] != 'X' and board[hod_usera - 1] != 'O':
+                            board[hod_usera - 1] = 'X'
+                        else:
+                            print('Некорректный ход. Пожалуйста, выберите свободную клетку от 1 до 9.')
+                            
+                    else:
+                        print('Некорректный ввод. Введите число от 1 до 9.')
+                        
+                    
+                    for i in range(3):
+                        print("|", board[0 + i * 3], "|", board[1 + i * 3], "|", board[2 + i * 3], "|")    
+                    print()    
+                        
+                    if board[0] == 'X' and board[1] == 'X' and board[2] == 'X':
+                        print('Вы собрали 3 X в ряд')
+                        break
+                    
+                    elif board[3] == 'X' and board[4] == 'X' and board[5] == 'X':
+                        print('Вы собрали 3 X в ряд')
+                        break
+                        
+                    elif board[6] == 'X' and board[7] == 'X' and board[8] == 'X':
+                        print('Вы собрали 3 X в ряд')
+                        break
+                        
+                    elif board[0] == 'X' and board[3] == 'X' and board[6] == 'X':
+                        print('Вы собрали 3 X в ряд') 
+                        break
+                        
+                    elif board[1] == 'X' and board[4] == 'X' and board[7] == 'X':
+                        print('Вы собрали 3 X в ряд')
+                        break
+                        
+                    elif board[2] == 'X' and board[5] == 'X' and board[8] == 'X':
+                        print('Вы собрали 3 X в ряд')
+                        break
+                        
+                    elif board[0] == 'X' and board[4] == 'X' and board[8] == 'X':
+                        print('Вы собрали 3 X в ряд')
+                        break
+                        
+                    elif board[2] == 'X' and board[4] == 'X' and board[6] == 'X':
+                        print('Вы собрали 3 X в ряд') 
+                        break
+                        
+                        
+                        
+                        
+                    elif board[0] == 'O' and board[1] == 'O' and board[2] == 'O':
+                        print('Virtual собрал 3 O в ряд')
+                        break
+                    
+                    elif board[3] == 'O' and board[4] == 'O' and board[5] == 'O':
+                        print('Virtual собрал 3 O в ряд')
+                        break
+                        
+                    elif board[6] == 'O' and board[7] == 'O' and board[8] == 'O':
+                        print('Virtual собрал 3 O в ряд')
+                        break
+                        
+                    elif board[0] == 'O' and board[3] == 'O' and board[6] == 'O':
+                        print('Virtual собрал 3 O в ряд')   
+                        break
+                        
+                    elif board[1] == 'O' and board[4] == 'O' and board[7] == 'O':
+                        print('Virtual собрал 3 O в ряд')
+                        break
+                        
+                    elif board[2] == 'O' and board[5] == 'O' and board[8] == 'O':
+                        print('Virtual собрал 3 O в ряд')
+                        break
+                        
+                    elif board[0] == 'O' and board[4] == 'O' and board[8] == 'O':
+                        print('Virtual собрал 3 O в ряд')
+                        break
+                        
+                    elif board[2] == 'O' and board[4] == 'O' and board[6] == 'O':
+                        print('Virtual собрал 3 O в ряд')
+                        break
+                    
+                    
+                    print()    
+                    time.sleep(1)
+                    print('Ход компьютера...')
+                    time.sleep(2)
+                    print()
+                   
+                    
+                      
+                
+                    
+                
+                    hod_kompyutera = random.choice([i for i in range(1, 10) if board[i - 1] not in ['X', 'O']])
+                    board[hod_kompyutera - 1] = 'O'
+                
+                 
+                    
+                    for i in range(3):
+                        print("|", board[0 + i * 3], "|", board[1 + i * 3], "|", board[2 + i * 3], "|")
+                        
+                    print()    
+                        
+                    if board[0] == 'X' and board[1] == 'X' and board[2] == 'X':
+                        print('Вы собрали 3 X в ряд!')
+                    
+                    elif board[3] == 'X' and board[4] == 'X' and board[5] == 'X':
+                        print('Вы собрали 3 X в ряд!')
+                        
+                    elif board[6] == 'X' and board[7] == 'X' and board[8] == 'X':
+                        print('Вы собрали 3 X в ряд!')
+                        
+                    elif board[0] == 'X' and board[3] == 'X' and board[6] == 'X':
+                        print('Вы собрали 3 X в ряд!')   
+                        
+                    elif board[1] == 'X' and board[4] == 'X' and board[7] == 'X':
+                        print('Вы собрали 3 X в ряд!')
+                        
+                    elif board[2] == 'X' and board[5] == 'X' and board[8] == 'X':
+                        print('Вы собрали 3 X в ряд!')
+                        
+                    elif board[0] == 'X' and board[4] == 'X' and board[8] == 'X':
+                        print('Вы собрали 3 X в ряд!')
+                        
+                    elif board[2] == 'X' and board[4] == 'X' and board[6] == 'X':
+                        print('Вы собрали 3 X в ряд!')    
+                        
+                        
+                        
+                        
+                    elif board[0] == 'O' and board[1] == 'O' and board[2] == 'O':
+                        print('Virtual собрал 3 O в ряд.')
+                    
+                    elif board[3] == 'O' and board[4] == 'O' and board[5] == 'O':
+                        print('Virtual собрал 3 O в ряд.')
+                        
+                    elif board[6] == 'O' and board[7] == 'O' and board[8] == 'O':
+                        print('Virtual собрал 3 O в ряд.')
+                        
+                    elif board[0] == 'O' and board[3] == 'O' and board[6] == 'O':
+                        print('Virtual собрал 3 O в ряд.')   
+                        
+                    elif board[1] == 'O' and board[4] == 'O' and board[7] == 'O':
+                        print('Virtual собрал 3 O в ряд.')
+                        
+                    elif board[2] == 'O' and board[5] == 'O' and board[8] == 'O':
+                        print('Virtual собрал 3 O в ряд.')
+                        
+                    elif board[0] == 'O' and board[4] == 'O' and board[8] == 'O':
+                        print('Virtual собрал 3 O в ряд.')
+                        
+                    elif board[2] == 'O' and board[4] == 'O' and board[6] == 'O':
+                        print('Virtual собрал 3 O в ряд.')
+            
+            else:
+                print('Других игр с рандомом пока что нет(')
+                
+                
+                
+        elif command_tip_igri.lower() == 'игры с датами' or command_tip_igri == '3':    
+            print()
+            print('Раздел находится в разработке...')
+                
+        
+        
+        
+        else:
+            print()
+            print('К сожалению других типов игр пока что нет(')
+        
+                    
+            
+                             
+              
+    elif command.lower() == "квиз" or command == '2':
+        print('Вот список доступных квизов:')
+        print("1. Книги")
+        print('2. Фильмы')
+        print("3. GTA 5")
+        print('')
+        
+        nomerkviza = input("Введите номер квиза: ")
+        
+        if nomerkviza.lower() == 'gta 5' or nomerkviza == '3':
+            pointsingtatest = 0
+            print('')
+            print('Привет! Если ты любишь играть в игру Gta 5 и Gta Online, этот квиз тебе понравится!')
+           
+            print('')
+            print('Quiz - GTA 5')
+            print('')
+    
+            gtavopros1 = input('Сколько главных героев в игре? (Напиши цифру) - ')
+            if gtavopros1 == "3" or gtavopros1.lower() == "три":
+                print("Правильный ответ!")
+                pointsingtatest += 1
+            else:
+                print('Это неправильный ответ!')
+    
+            print('')
+            if pointsingtatest == 1:
+                print('У вас', pointsingtatest, 'пункт')
+            else:
+                print('У вас 0 пунктов')
+    
+            print('')
+            print('В каком городе разворачиваются события игры GTA V? ')
+            
+            time.sleep(2)
+            print('')
+            print('Напиши номер варианта:')
+            print('1. Лос-Сантос')
+            print('2. Лос-Анджелес')
+            print('3. Вайс Сити')
+            print('4. Либерти Сити')
+            print()
+            
+            time.sleep(1)
+            gtavopros2 = input('Ваш выбор: ')
+            
+            
+            if gtavopros2.lower() == "лос-сантос" or gtavopros2 == "1" or gtavopros2.lower() == "лос сантос":
+                print("Правильный ответ!")
+                pointsingtatest += 1
+            else:
+                print('Это неправильный ответ!')
+    
+            print('')
+            if pointsingtatest == 0:
+                print('У вас', pointsingtatest, 'пунктов')
+            elif pointsingtatest == 1:
+                print('У вас', pointsingtatest, 'пункт')  
+            elif pointsingtatest >= 2:
+                print('У вас', pointsingtatest, 'пункта')    
+    
+            print('')
+            gtavopros3 = input('В каком году происходят события игры? (Напиши число) - ')
+            if gtavopros3 == "2013":
+                print("Правильный ответ!")
+                pointsingtatest += 1
+            else:
+                print('Это неправильный ответ!')
+    
+            print('')
+            if pointsingtatest == 0:
+                print('У вас', pointsingtatest, 'пунктов')
+            elif pointsingtatest == 1:
+                print('У вас', pointsingtatest, 'пункт')  
+            elif pointsingtatest >= 2:
+                print('У вас', pointsingtatest, 'пункта') 
+    
+            print('')
+            
+            gtavopros4 = input('Сколько вариантов концовки есть в игре? (Напиши цифру) - ')
+            if gtavopros4 == "3" or gtavopros4.lower() == "три":
+                print("Правильный ответ!")
+                pointsingtatest += 1
+            else:
+                print('Это неправильный ответ!')
+    
+            print('')
+            if pointsingtatest == 0:
+                print('У вас', pointsingtatest, 'пунктов')
+            elif pointsingtatest == 1:
+                print('У вас', pointsingtatest, 'пункт')  
+            elif pointsingtatest >= 2:
+                print('У вас', pointsingtatest, 'пункта') 
+    
+            print('')
+            gtavopros5 = input('Напиши дату, когда GTA 5 исполнилось 10 лет (пиши в формате DAY.MONTH.YEAR) - ')
+            if gtavopros5 == "17.09.2023" :
+                print("Правильный ответ!")
+                pointsingtatest += 1
+            else:
+                print('Это неправильный ответ!')
+    
+            print('')
+            if pointsingtatest == 1:
+                print('У вас', pointsingtatest, 'пункт')
+            elif pointsingtatest >= 2 and pointsingtatest <=4:
+                print('У вас', pointsingtatest, 'пункта')
+            elif pointsingtatest >= 5:
+                print('У вас', pointsingtatest, 'пунктов')
+            else:
+                print('У вас 0 пунктов')
+    
+            print()
+            print('Сейчас будет целых 3 вопроса подряд! Ответишь на все правильно и заберешь 3 пункта!')
+            print()
+            time.sleep(2)
+            print('Вам надо будет написать первую букву имени персонажа о котором идет речь. (F/M/T) - буквы пиши на английском!')
+            print()
+            print('F - Франклин, M - Майкл, T - Тревор')
+            print('')
+            gtavopros6 = input('Как зовут персонажа который работает на Симона? (F/M/T) - ')
+            gtavopros7 = input ('Как зовут персонажа который живет в пустыне Сэнди Шорс? (F/M/T) - ')
+            gtavopros8 = input('Как зовут персонажа у которого есть двое детей? (F/M/T) - ')
+            print()
+    
+            if gtavopros6.lower() == "f" and gtavopros7.lower() == "t" and gtavopros8.lower() == 'm':
+                print("Правильные ответы!")
+                pointsingtatest += 3
+            else:
+                print('Это неправильный ответ!')    
+        
+            print('')
+            if pointsingtatest == 0:
+                print('У вас', pointsingtatest, 'пунктов из 8!')
+            elif pointsingtatest == 1:
+                print('У вас', pointsingtatest, 'пункт из 8!')  
+            elif pointsingtatest >= 2 and pointsingtatest <=4:
+                print('У вас', pointsingtatest, 'пункта из 8!') 
+            elif pointsingtatest >= 5:
+                print('У вас', pointsingtatest, 'пунктов из 8!')   
+    
+    
+            elif pointsingtatest == 8:
+                print('Поздравляем! Вы ответили правильно на все вопросы. Вы настоящий эксперт по GTA 5!')
+               
+            if pointsingtatest >= 5:
+                print('Вы отлично справились! Вы знаете GTA 5 хорошо.')
+               
+            elif pointsingtatest >= 3:
+                print('У вас есть базовые знания об игре GTA 5, но есть еще место для улучшений.')
+               
+            else:
+                print('Вам стоит побольше узнать об игре GTA 5. Но не переживайте, вы можете улучшить свои знания!')
+            
+        
+        elif nomerkviza.lower() ==  'фильмы' or nomerkviza == '2':
+            pointsinfilmquiz = 0
+            print()
+            print('КВИЗ - ФИЛЬМЫ')
+            print('')
+            time.sleep(1.5)
+            print('')
+            print('Я буду описывать тебе фильм, а ты должен правильно его угадать!')
+            print('')
+            time.sleep(1)
+            print('Начинаем!')
+            print()
+            
+            time.sleep(1)
+        
+            print('1. Как называется 4-ый фильм про мальчика, который выжил?')
+            time.sleep(1)
+            print()
+            print('1. Гарри Поттер и принц Полукровка')
+            print('2. Гарри Поттер и узник Азкабана')
+            print('3. Гарри Поттер и кубок Огня')
+            print()
+            
+            time.sleep(2)
+            voprosprofilmi1 = input('Напишите номер варианта - ')
+            print('')
+            
+            if voprosprofilmi1.lower() == 'гарри поттер и кубок огня' or voprosprofilmi1.lower() == 'кубок огня'  or voprosprofilmi1 == '3':
+                print('Верно! Это фильм - Гарри Поттер и Кубок огня! Ты получаешь балл!')
+                pointsinfilmquiz +=1
+                
+            else:
+                print('Увы! Это неправильный ответ!')
+                print('Правильный ответ - Гарри Поттер и Кубок огня. ')
+                
+            print('')
+            print('Следующий вопрос:')
+            print()
+            
+            time.sleep(1)
+            
+            print('2. Как называется новогодний фильм, где родители забывают сына дома и он остается один?')
+            time.sleep(1)
+            print()
+            print('1. Один дома')
+            print('2. Джуманджи')
+            print('3. Привет семье')
+            print()
+            
+            
+            voprosprofilmi2 = input('Напишите номер варианта - ')
+            print('')
+            if voprosprofilmi2.lower() == 'один дома' or voprosprofilmi2 == '1':
+                print('Верно! Это фильм - Один Дома! Ты получаешь балл!')
+                pointsinfilmquiz +=1
+                
+            else:
+                print('Увы! Это неправильный ответ!')
+                print('Правильный ответ - Один Дома. ')
+                
+            print('')
+            print('Следующий вопрос:')
+            print()
+            
+            time.sleep(1)   
+            
+            print('3. Как назывался фильм, где группа подростков попала в компьютерную игру?')
+            time.sleep(1)
+            print()
+            print('1. Город костей')
+            print('2. Джуманджи')
+            print('3. Локвуд и компания')
+            print()
+            
+            
+            voprosprofilmi3 = input('Напишите номер варианта - ')
+            print('')
+            if voprosprofilmi3.lower() == 'джуманджи' or voprosprofilmi3 == '2':
+                print('Верно! Это фильм - Джуманджи! Ты получаешь балл!')
+                pointsinfilmquiz +=1
+                
+            else:
+                print('Увы! Это неправильный ответ!')
+                print('Правильный ответ - Джуманджи. ')
+                
+            print('')
+            print('Следующий вопрос:')
+            print()
+            
+            time.sleep(1) 
+            
+            print('4. Как называется фильм, где мужчина устроился работать охранником в музей, и увидел что ночью все экспонаты оживают?')
+            time.sleep(1)
+            print()
+            print('1. Билет в рай')
+            print('2. Ночь в музее')
+            print('3. Перси Джексон')
+            print()
+            
+            voprosprofilmi4 = input('Напишите номер варианта - ')
+            print('')
+            if voprosprofilmi4 == 'ночь в музее' or voprosprofilmi4 == '2':
+                print('Верно! Это фильм - Ночь в музее! Ты получаешь балл!')
+                pointsinfilmquiz +=1
+                
+            else:
+                print('Увы! Это неправильный ответ!')
+                print('Правильный ответ - Ночь в музее. ')
+                
+            print('')
+            print('Следующий вопрос:')
+            print()
+            
+            time.sleep(1)
+            
+            print('5. Как называется мультфильм, в котором игрушки - живые?')
+            time.sleep(1)
+            print()
+            print('1. Холодное сердце')
+            print('2. Мадагаскар')
+            print('3. История игрушек')
+            print()
+            
+            voprosprofilmi5 = input('Напишите номер варианта - ')
+            print('')
+            if voprosprofilmi5.lower() == 'история игрушек' or voprosprofilmi5 == '3':
+                print('Верно! Это мультфильм - История игрушек! Ты получаешь балл!')
+                pointsinfilmquiz +=1
+                
+            else:
+                print('Увы! Это неправильный ответ!')
+                print('Правильный ответ - История игрушек ')
+                
+            print('')
+            
+            time.sleep(3)
+            
+            print('Это был последний вопрос!')
+            
+            time.sleep(2)
+            
+            print('Подсчитываем баллы...')
+            print('')
+                
+            time.sleep(3)
+            
+            if pointsinfilmquiz == 5:
+                print('Поздравяем! Вы получили 5 из 5 баллов! Похоже вы настоящий киноэксперт!')
+                
+            elif pointsinfilmquiz == 4:
+                print('Вы набрали 4 балла из 5! Это очень хороший результат!')
+                
+            elif pointsinfilmquiz == 3:
+                print('Вы набрали 3 балла из 5. Вы неплохо разбираетесь в кино!')
+                
+            elif pointsinfilmquiz == 2:
+                print('Вы набрали 2 балла из 5. Надеюсь в следующий раз вам повезет!')    
+                    
+            elif pointsinfilmquiz == 1:                    
+                print('Вы набрали 1 балл из 5. Видимо вы не очень хорошо знаете фильмы...')
+                    
+            elif pointsinfilmquiz == 0:
+                print('К сожалению, вы на все вопросы ответили неправильно! Но ничего страшного, вы всегда можете перепройти этот тест! ')
+            
+            print('')
+            
+            
+            
+        elif nomerkviza.lower() == 'книги' or nomerkviza == '1':
+            print()
+            print('КВИЗ - КНИГИ')
+            print('')
+            print('')
+            
+            pointsinbookq = 0
+            
+            print('Я буду описывать тебе книгу, а ты должен правильно ее угадать!')
+            print('')
+            time.sleep(1)
+            print('Начинаем!')
+            
+            time.sleep(1)
+            
+            print('1. Как называется классическая книга, где в конце главная героиня прыгнула под поезд?')
+            time.sleep(1)
+            print()
+            print('1. Война и мир')
+            print('2. Сестра Керри')
+            print('3. Анна Каренина')
+            print()
+            
+            
+            
+            bookvoprosik1 = input('Напишите номер варианта: ')
+            print('')
+            time.sleep(1)
+            
+            
+            
+            if bookvoprosik1 == 'анна каренина' or bookvoprosik1 == '3':
+                print('Верно! Это книга - Анна Каренина от Льва Толстого! Ты получаешь балл!')
+                pointsinbookq +=1
+                
+            else:
+                print('Увы! Это неправильный ответ!')
+                print('Правильный ответ - Анна Каренина ')
+                
+            print('')
+            print('')
+            print('Следующий вопрос:')
+            
+            time.sleep(1)
+            
+            print('2. Как называется часть серии книг о мальчике который выжил, в которой погибает директор школы?')
+            time.sleep(1)
+            print()
+            print('1. Гарри Поттер и принц Полукровка')
+            print('2. Гарри Поттер и кубок Огня')
+            print('3. Гарри Поттер и тайная комната')
+            print()
+            
+            bookvoprosik2 = input('Напишите номер варианта: ')
+            print('')
+            if bookvoprosik2.lower() == 'гарри поттер и принц полукровка' or bookvoprosik2.lower() == 'гарри поттер и принц-полукровка' or bookvoprosik2 == '1':
+                print('Верно! Это книга - Гарри Поттер и принц Полукровка! Ты получаешь балл!')
+                pointsinbookq +=1
+                
+            else:
+                print('Увы! Это неправильный ответ!')
+                print('Правильный ответ - Гарри Поттер и принц Полукровка. ')
+                
+            print('')
+            print('')
+            print('Следующий вопрос:')
+            
+            time.sleep(1)   
+            
+            print('3. Как называется серия книг, о девочке Василисе, которая умеет управлять временем?')
+            time.sleep(1)
+            print()
+            print('1. Вичхантеры')
+            print('2. Хрупкое равновесие')
+            print('3. Часодеи')
+            print()
+            
+            
+            bookvoprosik3 = input('Напишите номер варианта: ')
+            print('')
+            if bookvoprosik3 == '3' or bookvoprosik3.lower() == 'часодеи':
+                print('Верно! Это серия книг Часодеи, от Натальи Щербы! Ты получаешь балл!')
+                pointsinbookq +=1
+                
+            else:
+                print('Увы! Это неправильный ответ!')
+                print('Правильный ответ - Часодеи. ')
+                
+            print('')
+            print('')
+            print('Следующий вопрос:')
+            
+            time.sleep(1) 
+            
+            print('4. Как называется серия книг, об ассасине Селене Сардотин?')
+            
+            time.sleep(1)
+            print()
+            print('1. Стеклянный Трон')
+            print('2. Шолох')
+            print('3. Орудия Смерти')
+            print()
+            
+            bookvoprosik4 = input('Напишите номер варианта: ')
+            print('')
+            if bookvoprosik4.lower() == 'стеклянный трон' or bookvoprosik4 == '1':
+                print('Верно! Это серия книг Стеклянный Трон! Ты получаешь балл!')
+                pointsinbookq +=1
+                
+            else:
+                print('Увы! Это неправильный ответ!')
+                print('Правильный ответ - Стеклянный Трон. ')
+            
+            print('')    
+            print('')
+            print('Следующий вопрос:')
+            
+            time.sleep(1)
+            
+            print('5. Как называется книга, где 17-летняя бедная девушка неожиданно получает в наследство 46 миллиардов долларов?')
+            time.sleep(1)
+            print()
+            print('1. Принцесса душ')
+            print('2. Игры наследников')
+            print('3. Золото в темной ночи')
+            print()
+            
+            bookvoprosik5 = input('Напишите номер варианта: ')
+            print('')
+            if bookvoprosik5.lower() == 'игры наследников' or bookvoprosik5 == '2':
+                print('Верно! Это книга - Игры Наследников! Ты получаешь балл!')
+                pointsinbookq +=1
+                
+            else:
+                print('Увы! Это неправильный ответ!')
+                print('Правильный ответ - Игры наследников. ')
+                
+            print('')
+            
+            time.sleep(3)
+            
+            print('Это был последний вопрос!')
+            
+            time.sleep(2)
+            
+            print('Подсчитываем баллы...')
+            print('')
+            
+            time.sleep(3)
+            
+            if pointsinbookq == 5:
+                print('Поздравяем! Вы получили 5 из 5 баллов! Похоже вы настоящий книжный эксперт!')
+                
+            elif pointsinbookq == 4:
+                print('Вы набрали 4 балла из 5! Это очень хороший результат!')
+                
+            elif pointsinbookq == 3:
+                print('Вы набрали 3 балла из 5. Вы неплохо разбираетесь в литературе!')
+                
+            elif pointsinbookq == 2:
+                print('Вы набрали 2 балла из 5. Надеюсь в следующий раз вам повезет!')    
+                
+            elif pointsinbookq == 1:
+                print('Вы набрали 1 балл из 5. Видимо вы не очень хорошо знаете книги')
+                
+            elif pointsinbookq == 0:
+                print('К сожалению, вы на все вопросы ответили неправильно! Но ничего страшного, вы всегда можете перепройти этот тест! ')
+        
+            print('')
+            
+            
+            
+
+
+
+
+
+        
+        
+                
+            
+    
+        else:
+            print('К сожалению, такого квиза пока что нет.')
+    
+    
+    elif command.lower() == 'рандомайзер' or command.lower() == 'рандом' or command == '3':
+        print('')
+        print('РАНДОМАЙЗЕР')
+        print('')
+        
+        while True:
+            number1forrandom = int(input('Выберите минимальное число для рандомайзера: '))
+            number2forrandom = int(input('Выберите максимальное число для рандомайзера: '))
+            
+            
+            
+             
+            number = random.randint(number1forrandom, number2forrandom)
+            
+            print()
+            print('Рандом запущен!')
+            print('')
+            
+            
+            time.sleep(3)
+            print('Ваше число:' ,number,)
+            print('')
+            break
+        
+        
+    
+    
+    elif command.lower() == "советчик" or command == '4':
+        print('Добро пожаловать в программу Советчик!')
+        print("Здесь я буду тебе что-нибудь советовать исходя из твоих предпочтений!")
+        time.sleep(2)
+        print('')
+        print('Вот список того, что я могу посоветовать: ')
+        print('1. Игра')
+        print('')
+        time.sleep(1)
+        
+        
+        viborvsovetchike = input('Введите номер нужной команды: ')
+        
+        if viborvsovetchike.lower() == 'игра' or viborvsovetchike == '1':
+            print()
+            print('Хорошо, запускаю программу Советчик - Игра!')
+            print('Отвечай на мои вопросы и в конце я выберу самую подходящую игру именно для тебя!')
+            print('')
+            
+            
+            print('Какие игры вы предпочитаете: реалистичные(1) или фэнтези(2) ?')
+            sovetchikproigri1 = input('Выберите 1 или 2: ')
+            print()
+            
+            print('Выберите: игры с четким сюжетом(1) или игры с открытым миром(2) ')
+            sovetchikproigri2 = input('Выберите 1 или 2: ')
+            
+            print('Вы любите играть с друзьями? Да(1) или Нет(2) ')
+            sovetchikproigri3 = input('Выбери 1 или 2: ')
+           
+            print('') 
+            
+            if sovetchikproigri1 == '1' and sovetchikproigri2 == '1' and sovetchikproigri3 == '1':
+                print('Вам стоит поиграть в Squad!')
+                
+            elif sovetchikproigri1 == '1' and sovetchikproigri2 == '1' and sovetchikproigri3 == '2' :
+                print('Вам стоит поиграть в Arma 3!')    
+                
+            elif sovetchikproigri1 == '1' and sovetchikproigri2 == '2' and sovetchikproigri3 == '1':
+                print('Вам стоит поиграть в GTA Online!')  
+                
+            elif sovetchikproigri1 == '1' and sovetchikproigri2 == '2' and sovetchikproigri3 == '2':
+                print('Вам стоит поиграть в GTA 5')  
+                
+            elif sovetchikproigri1 == '2' and sovetchikproigri2 == '1' and sovetchikproigri3 == '2' :
+                print('Вам стоит поиграть в World of Warcraft!') 
+                
+            elif sovetchikproigri1 == '2' and sovetchikproigri2 == '1' and sovetchikproigri3 == '1':
+                print('Вам стоит поиграть в The Witcher!')  
+                    
+            elif sovetchikproigri1 == '2' and sovetchikproigri2 == '2' and sovetchikproigri3 == '1':
+                print('Вам стоит поиграть в Genshin Impact!')  
+                
+            elif sovetchikproigri1 == '2' and sovetchikproigri2 == '2' and sovetchikproigri3 == '2':
+                print('Вам стоит поиграть в Dark Souls III!') 
+                
+            else:
+                print('Интересные у вас предпочтения...')
+                time.sleep(1.5)
+                print()
+                print('Даже не знаю что посоветовать...')
+                time.sleep(1)
+                print()
+                print('Знаю!')
+                time.sleep(2)
+                print('Поиграйте в Майнкрафт!')
+                
+            print('') 
+            
+        else:
+            print('Такой команды еще нет.')
+            
+            
+            
+    
+        
+            
+            
+        
+        
+            
+                
+    elif command.lower() == 'предсказания' or command.lower() == 'предсказание' or command.lower() == 'предсказание на день' or command == '5':
+        predskazanije2024 = random.choice(['Сегодня вам лучше не разминать пальцы на правой руке', 
+            'Вас ждут проблемы, если вы забудете разморозить курицу', 
+            'Сегодня лучше взять зонт, если будет дождь',
+            'Лушче подумать, чем не подумать',
+            'Сегодня вас ждут вкусности', 'В скором времени вас ждет успех!', 
+            "Сегодня будет день, полный возможностей", "Не забывайте о здоровье", 
+            "Сегодня может быть хороший день для начала новых проектов", 
+            'Вам стоит поставить лайк этому виртуальному помощнику'])
+
+
+    
+        print('🔮🔮🔮  Приветствуем тебя в магическом шаре   🔮🔮🔮')
+        
+        print(' ')
+        time.sleep(1)
+        print('Твое  предсказание...')
+        time.sleep(1)
+        print('🔮🔮🔮🔮🔮🔮🔮🔮🔮🔮🔮🔮🔮')
+        time.sleep(2)
+        print('')
+        print(predskazanije2024)
+       
+        
+    elif command.lower() == 'калькулятор' or command == '6':
+        time.sleep(1)
+        print()
+
+        print('Добро пожаловать в Калькулятор!')
+        print()
+        time.sleep(1)
+        
+        
+        
+        def add(x, y):
+            return x + y
+        
+        def subtract(x, y):
+            return x - y
+        
+        def multiply(x, y):
+            return x * y
+        
+        def divide(x, y):
+            if y == 0:
+                return "Ошибка! Деление на ноль недопустимо."
+            return x / y
+        
+        print("Выберите операцию:")
+        print("1. Сложение")
+        print("2. Вычитание")
+        print("3. Умножение")
+        print("4. Деление")
+        
+        
+        time.sleep(2)
+        print()
+        choiceincalc = input("Введите номер операции (1, 2, 3, 4):")
+        
+        print()
+        number1forcalc = float(input("Введите первое число: "))
+        number2forcalc = float(input("Введите второе число: "))
+        print()
+        
+        if choiceincalc == '1':
+            print(number1forcalc, "+", number2forcalc, "=", add(number1forcalc, number2forcalc))
+        
+        elif choiceincalc == '2':
+            print(number1forcalc, "-", number2forcalc, "=", subtract(number1forcalc, number2forcalc))
+        
+        elif choiceincalc == '3':
+            print(number1forcalc, "*", number2forcalc, "=", multiply(number1forcalc, number2forcalc))
+        
+        elif choiceincalc == '4':
+            print(number1forcalc, "/", number2forcalc, "=", divide(number1forcalc, number2forcalc))
+        else:
+            print("Некорректный ввод")
+        
+
+
+ 
+            
+            
+
+            
+            
+        
+        
+        
+        
+        
+
+     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    elif command.lower() == 'техподдержка' or command.lower() == '7':
+        time.sleep(1)
+        print()
+        print('Если вы нашли ошибку, или у вас есть идея по дополнению функционала VirtuAl,')
+        print('то напишите мне в телеграм - @wdyh_meee')
+        print()
+        print()
+        print()
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    else:
+        print("Неверная команда. Пожалуйста, выберите из списка команд.")
+        
